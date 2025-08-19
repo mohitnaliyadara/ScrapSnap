@@ -45,7 +45,8 @@ class _SigninMobileScreenState extends State<SigninMobileScreen> {
 
             customButton(
               text: "Verify Using OTP",
-              onPress: () {},
+              onPress: () {
+              },
               backcolor: AppColors.primaryColor,
               width: 333,
               height: 40,
@@ -57,8 +58,7 @@ class _SigninMobileScreenState extends State<SigninMobileScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("By Continuing, You Agree To Our"),
-
-            customTextButton(text: "Term And Condition", onPress: (){},height: 30,backColor: AppColors.whiteColor),
+                customTextButton(text: "Term And Condition", onPress: (){},height: 30,backColor: AppColors.whiteColor),
               ],
             ),
           ],

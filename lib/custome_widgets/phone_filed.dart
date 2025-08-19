@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
+import 'package:scapsnap/controller/global_variable.dart';
 
 import '../utils/app_colors.dart';
 
@@ -9,6 +10,7 @@ Widget phoneTextField() => Container(
     width: 333,
     height: 60,
     child: IntlPhoneField(
+      controller: GlobalVariable.phoneNumberController,
       keyboardType: TextInputType.phone,
       inputFormatters: [
         FilteringTextInputFormatter.digitsOnly,

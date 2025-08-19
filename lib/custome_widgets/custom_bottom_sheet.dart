@@ -65,6 +65,7 @@ Future<void> customBottomSheet({required BuildContext context}) async {
                height: 50,
                text: "Done", onPress: (){
              Navigator.pop(context);
+             Get.toNamed("/signin");
            })
           ],
         ),
