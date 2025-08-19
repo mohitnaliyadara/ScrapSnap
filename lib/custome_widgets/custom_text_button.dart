@@ -6,11 +6,12 @@ Widget customTextButton({
   required String text,
   required void Function() onPress,
   double? width = 20,
+  Color? backColor,
   double? height = 30,
 }) {
   return Container(
     decoration: BoxDecoration(
-      color: AppColors.primaryColor,
+      color: backColor ?? AppColors.primaryColor,
       borderRadius: BorderRadius.circular(100),
     ),
     child: TextButton(

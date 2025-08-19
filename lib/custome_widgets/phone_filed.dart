@@ -12,13 +12,14 @@ Widget phoneTextField() => Container(
       keyboardType: TextInputType.phone,
       inputFormatters: [
         FilteringTextInputFormatter.digitsOnly,
-        LengthLimitingTextInputFormatter(10),
+
       ],
+      dropdownIconPosition: IconPosition.leading,
+      keyboardAppearance: Brightness.light,
       dropdownDecoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        border: BoxBorder.fromLTRB(
-          right: BorderSide(color: AppColors.blackColor),
-        ),
+        color: Colors.transparent,
+        border: BoxBorder.fromLTRB(right: BorderSide(color: AppColors.blackColor,)),
+        borderRadius: BorderRadius.horizontal(right: Radius.circular(10))
       ),
       decoration: InputDecoration(
         hintText: 'Phone Number',

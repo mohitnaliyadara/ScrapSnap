@@ -1,7 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:scapsnap/custome_widgets/custom_button.dart';
+import 'package:scapsnap/custome_widgets/custom_text_button.dart';
 import 'package:scapsnap/custome_widgets/custom_text_field.dart';
 import 'package:scapsnap/custome_widgets/phone_filed.dart';
 import 'package:scapsnap/utils/app_colors.dart';
@@ -41,6 +42,25 @@ class _SigninMobileScreenState extends State<SigninMobileScreen> {
               topMargin: 30,
             ),
             phoneTextField(),
+
+            customButton(
+              text: "Verify Using OTP",
+              onPress: () {},
+              backcolor: AppColors.primaryColor,
+              width: 333,
+              height: 40,
+              topmargin: 30,
+              textstyle: AppTextStyle.semiBold16(color: AppColors.whiteColor),
+            ),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("By Continuing, You Agree To Our"),
+
+            customTextButton(text: "Term And Condition", onPress: (){},height: 30,backColor: AppColors.whiteColor),
+              ],
+            ),
           ],
         ),
       ),
