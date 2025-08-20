@@ -104,11 +104,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 backcolor: AppColors.buttonBackColor,
                 text: currentPage == pages.length - 1 ? "Finish" : "Next",
                 onPress: () {
-                  if (currentPage == pages.length - 1) {
-                    finishOnboarding();
-                  } else {
-                    pageController.nextPage(
-                      duration: Duration(milliseconds: 300),
+                      if (currentPage == pages.length - 1) {
+                        finishOnboarding();
+                      } else {
+                        pageController.nextPage(
+                          duration: Duration(milliseconds: 300),
                       curve: Curves.easeIn,
                     );
                   }
