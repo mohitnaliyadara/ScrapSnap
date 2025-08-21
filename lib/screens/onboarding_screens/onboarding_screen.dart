@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:scapsnap/custome_widgets/custom_button.dart';
 import 'package:scapsnap/screens/select_langunage_screen.dart';
 import 'package:scapsnap/utils/app_colors.dart';
+import 'package:scapsnap/utils/app_style.dart';
 import 'package:scapsnap/utils/images.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../custom_widgets/custom_button.dart';
 import 'custom_onboarding_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -103,6 +104,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 height: 50,
                 backcolor: AppColors.buttonBackColor,
                 text: currentPage == pages.length - 1 ? "Finish" : "Next",
+                textstyle: AppTextStyle.semiBold16(color: AppColors.whiteColor),
                 onPress: () {
                       if (currentPage == pages.length - 1) {
                         finishOnboarding();

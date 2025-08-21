@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:scapsnap/custome_widgets/custom_bottom_sheet.dart';
 import 'package:scapsnap/utils/app_colors.dart';
 import 'package:scapsnap/utils/images.dart';
+import '../custom_widgets/custom_bottom_sheet.dart';
 
 class SelectLangunageScreen extends StatefulWidget {
   const SelectLangunageScreen({super.key});

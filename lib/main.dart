@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:scapsnap/res/routes/app_routes.dart';
 import 'package:scapsnap/screens/sign_in_screens/signin_mobile_screen.dart';
+import 'package:scapsnap/screens/splash_screen.dart';
 import 'package:scapsnap/utils/app_colors.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -24,10 +25,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
       ),
-      home: FutureBuilder(future: isOnboardingSeen(), builder: (context, snapshot) {
-        if(!snapshot.hasData) return CircularProgressIndicator();
-        return snapshot.data! ? SigninMobileScreen() : SigninMobileScreen();
-      },),
+      // home: FutureBuilder(future: isOnboardingSeen(), builder: (context, snapshot) {
+      //   if(!snapshot.hasData) return CircularProgressIndicator();
+      //   return snapshot.data! ? SigninMobileScreen() : SigninMobileScreen();
+      // },),
+      home: SplashScreen(),
       getPages: AppRoutes.appRoutes,
     );
   }

@@ -8,4 +8,5 @@ class AppImages{
   static final String  onboarding4 = "assets/images/onboarding4.svg";
   static final String  sLangunageScreen = "assets/images/sLanguage.svg";
   static final String  signinScreen = "assets/images/signin.svg";
+  static final String otpScreenImage = "assets/images/otp.svg";
 }

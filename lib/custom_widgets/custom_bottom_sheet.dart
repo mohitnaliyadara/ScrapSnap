@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:scapsnap/controller/global_variable.dart';
-import 'package:scapsnap/custome_widgets/custom_button.dart';
 import 'package:scapsnap/utils/app_colors.dart';
 import 'package:scapsnap/utils/app_style.dart';
+
+import 'custom_button.dart';
 
 Future<void> customBottomSheet({required BuildContext context}) async {
   final globalVariable = Get.put(GlobalVariable());
@@ -63,9 +64,10 @@ Future<void> customBottomSheet({required BuildContext context}) async {
                topmargin: 10,
                width: 200,
                height: 50,
+               textstyle: AppTextStyle.semiBold16(color: AppColors.whiteColor),
                text: "Done", onPress: (){
              Navigator.pop(context);
-             Get.toNamed("/signin");
+             Get.offNamed("/signin_mobile_screen");
            })
           ],
         ),

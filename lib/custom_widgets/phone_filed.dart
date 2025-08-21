@@ -6,9 +6,9 @@ import 'package:scapsnap/controller/global_variable.dart';
 import '../utils/app_colors.dart';
 
 Widget phoneTextField() => Container(
-    margin: EdgeInsets.only(top: 10),
+    margin: EdgeInsets.only(top: 20),
     width: 333,
-    height: 60,
+    height: 65,
     child: IntlPhoneField(
       controller: GlobalVariable.phoneNumberController,
       keyboardType: TextInputType.phone,
@@ -24,7 +24,8 @@ Widget phoneTextField() => Container(
         borderRadius: BorderRadius.horizontal(right: Radius.circular(10))
       ),
       decoration: InputDecoration(
-        hintText: 'Phone Number',
+        hintText: "  Phone Number",
+
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: AppColors.blackColor),
           borderRadius: BorderRadius.circular(10),

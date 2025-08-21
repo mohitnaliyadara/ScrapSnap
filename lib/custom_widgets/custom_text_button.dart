@@ -6,10 +6,13 @@ Widget customTextButton({
   required String text,
   required void Function() onPress,
   double? width = 20,
+  Color? textColor,
   Color? backColor,
   double? height = 30,
+  double? topMargin,
 }) {
   return Container(
+    margin: EdgeInsets.only(top: topMargin ?? 0 ),
     decoration: BoxDecoration(
       color: backColor ?? AppColors.primaryColor,
       borderRadius: BorderRadius.circular(100),
@@ -19,7 +22,7 @@ Widget customTextButton({
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
       ),
       onPressed: onPress,
-      child: Text(text, style: AppTextStyle.semiBold14()),
+      child: Text(text, style: AppTextStyle.semiBold14(color: textColor ?? AppColors.blackColor)),
     ),
   );
 }
