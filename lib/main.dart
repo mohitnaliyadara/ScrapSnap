@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:scapsnap/res/routes/app_routes.dart';
-import 'package:scapsnap/screens/sign_in_screens/signin_mobile_screen.dart';
 import 'package:scapsnap/screens/splash_screen.dart';
 import 'package:scapsnap/utils/app_colors.dart';
 import 'package:shared_preferences/shared_preferences.dart';
